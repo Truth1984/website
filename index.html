@@ -3,9 +3,9 @@
   <head> </head>
   <body>
     Greetings traveler <br />
-    <script src="bundle.js"></script>
+    <script src="dist/bundle.js"></script>
     <script>
-      document.write(new Date().toLocaleString());
+      setInterval(()=>document.body.innerHTML = (new Date().toLocaleString()),500);
     </script>
   </body>
 </html>
